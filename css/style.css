@@ -94,7 +94,7 @@ a {
   flex-direction: column;
   gap: 6vh;
   position: absolute;
-  top: 20%;
+  top: 50%;
   transform: translateY(-50%);
 }
 .navigator .navigator-inner nav ol li {
