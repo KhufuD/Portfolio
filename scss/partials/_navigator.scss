@@ -21,29 +21,34 @@
             max-width: 40vw;
             width: 100%;
             ol {
-                // list-style-type: decimal-leading-zero;
                 list-style: none;
-                counter-reset: none;
                 display: flex;
                 flex-direction: column;
-                gap: 6vh;
+                gap: 4vh;
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                // width: 16vw;
                 li {
-                    counter-increment: li;
-                    &::before {
-                        content: counter(li);
-                        @include large-text();
-                        display: inline-block;
-                        width: 1vw;
-                        margin-left: -1vw;
-                        padding: 0.5vh;
-                    }
                     a {
-                        h2 {
-                            @include heading-2();
+                        @include heading-2();
+                        position: relative;
+                        line-height: 1.2;
+                        color: transparent;
+                        -webkit-text-stroke: 1px $heading-color;
+                        font-weight: 700;
+                        &::before {
+                            content: attr(data-text);
+                            position: absolute;
+                            color: $heading-color;
+                            width: 0;
+                            overflow: hidden;
+                            transition: 0.4s ease-in-out;
+                            border-right: 8px solid $primary-color;
+                        }
+                        &:hover::before {
+                            width: 100%;
+                            -webkit-text-stroke: 1px $heading-color;
+                            filter: drop-shadow( 0 0 25px $primary-color);
                         }
                     }
                 }

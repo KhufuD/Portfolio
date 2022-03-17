@@ -1,0 +1,44 @@
+footer {
+    background-color: $footer-color;
+    margin-top: 2vh;
+    .footer-inner {
+        padding-top: 3vh;
+        .blog-btn {
+            margin-bottom: 3vh;
+            padding-left: 2vw;
+            #blog {
+                background-color: $primary-color;
+                border: 1px solid transparent;
+                min-width: 12vw;
+                padding: 1.5vh 0 1.5vh 1vw;
+                text-align: start;
+                @include large-text();
+                color: $footer-color;
+                font-weight: 600;
+                border-radius: 0 40px 40px 0;
+                letter-spacing: 0.2vw;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+                &:hover {
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                    background-color: transparent;
+                }
+            }
+            .btn-span {
+                padding-left: 0.5vw;
+            }
+        }
+        .copyright {
+            border-top: 1px solid $primary-color;
+            padding: 1.2vh 0;
+            text-align: center;
+            .copy-text {
+                @include large-text();
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.08vw;
+            }
+        }
+    }
+}
