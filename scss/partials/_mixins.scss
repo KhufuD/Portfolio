@@ -1,0 +1,22 @@
+@mixin heading-2() {
+    font-family: 'League Spartan';
+    font-size: $h2;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $heading-color;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+}
+
+@mixin large-text() {
+    font-family: 'Playfair Display';
+    font-size: $lg-text;
+    line-height: 1.1;
+    font-weight: 400;
+    color: $text-color;
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+}

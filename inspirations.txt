@@ -1,0 +1,21 @@
+https://www.christinavanessa.com/explore
+https://dorota1997.github.io/react-frontend-dev-portfolio/
+https://jacekjeznach.com/skills
+
+color schemes:
+Primary(green): #1FFF0F
+secondary(purple): #EF0FFF
+black: #000000
+text color: #E3E3E3
+
+font family: League Spartan / Freight Display
+
+
+sass --watch scss/style.scss:css/style.css
+
+****** HOME ******
+
+Logo 
+big menu
+subscribe to newsletter
+footer
