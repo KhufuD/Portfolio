@@ -23,6 +23,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: #1D1D1D;
 }
 
 a {
@@ -106,7 +107,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.5vw;
   position: relative;
-  line-height: 1.2;
+  line-height: 1.6;
   color: transparent;
   -webkit-text-stroke: 1px #f5f5f5;
   font-weight: 700;
@@ -177,6 +178,33 @@ footer .footer-inner .copyright .copy-text {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.08vw;
+}
+
+.card {
+  background-color: #1D1D1D;
+  position: absolute;
+  top: 17vh;
+  right: 12vw;
+  height: 66vh;
+  width: 76vw;
+  border-right: 4px solid #1FFF0F;
+}
+.card .card-inner {
+  height: 66vh;
+  padding: 4vh 8vw;
+  position: relative;
+}
+.card .card-inner .card-collapse {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, 50%);
+}
+.card .card-inner .card-collapse .card-btn {
+  color: #1FFF0F;
+  background-color: transparent;
+  border: none;
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
