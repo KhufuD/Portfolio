@@ -2,10 +2,12 @@
     background-color: $background-color;
     position: absolute;
     top: 17vh;
-    right: 12vw;
+    // right: 12vw;
+    right: -100vw;
     height: 66vh;
     width: 76vw;
     border-right: 4px solid $primary-color;
+    transition: 0.5s ease-in-out;
     .card-inner {
         height: 66vh;
         padding: 4vh 8vw;
@@ -13,14 +15,37 @@
         .card-collapse {
             position: absolute;
             top: 50%;
-            right: 2%;
+            right: 0;
             transform: translate(-50%, 50%);
-            .card-btn {
+            #card-btn {
                 color: $primary-color;
                 background-color: transparent;
                 border: none;
                 font-size: 48px;
+                cursor: pointer;
+            }
+        }
+        .card-bottom {
+            text-align: center;
+            a {
+                @include large-text();
+                font-weight: 600;
+                color: $background-color;
+                background-color: $primary-color;
+                padding: 2vh 4vw;
+                border-radius: 40px;
+                border: 1px solid transparent;
+                transition: 0.4s ease-in-out;
+                &:hover {
+                    color: $primary-color;
+                    background-color: transparent;
+                    border: 1px solid $primary-color;
+                }
             }
         }
     }
+}
+
+.about-in {
+    right: 12vw;
 }

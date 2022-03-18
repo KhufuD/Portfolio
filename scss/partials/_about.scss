@@ -1,7 +1,18 @@
-// .about {
-//     background-color: white;
-//     position: absolute;
-//     top: 17.9vh;
-//     right: 0;
-//     height: 65vh;
-// }
+.about-inner {
+    .about-top {
+        text-align: center;
+        margin-bottom: 16vh;
+        h2 {
+            @include heading-2();
+            margin-bottom: 8vh;
+        }
+        p {
+            @include large-text();
+            max-width: 40vw;
+            margin: 0 auto 4vh auto;
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
