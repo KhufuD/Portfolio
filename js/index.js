@@ -9,7 +9,7 @@
 // const hireMeClass = document.getElementsByClassName("hire-me");
 // const newsLetterClass = document.getElementsByClassName("news-letter");
 
-const aboutId = document.getElementById("about");
+
 // const skillsId = document.getElementById("skills");
 // const whyMeId = document.getElementById("why-me");
 // const portfolioId = document.getElementById("portfolio");
@@ -20,9 +20,22 @@ const aboutId = document.getElementById("about");
 
 // aboutId.addEventListener("click", slide());
 
-function aboutSlide() {
-    var element = document.getElementById("about-out");
+const aboutId = document.getElementById("about");
+
+function aboutSlideIn() {
+    let element = document.getElementById("about-card");
     element.classList.add("about-in");
+    element.classList.remove("card-out");
+
 }
 
-// const arrow = document.getElementsByClassName("card-btn");
+// Moving the card out
+
+const arrow = document.getElementById("card-btn");
+
+function aboutSlideOut() {
+    let element = document.getElementById("about-card");
+    element.classList.add("card-out");
+    element.classList.remove("about-in");
+
+}

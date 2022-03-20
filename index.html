@@ -49,7 +49,7 @@
                 <nav>
                     <ol>
                         <li>
-                            <a href="#" onclick="aboutSlide()" id="about" data-text="&nbsp;ABOUT">&nbsp;About
+                            <a href="#" onclick="aboutSlideIn()" id="about" data-text="&nbsp;ABOUT">&nbsp;About
                 </a>
                         </li>
                         <li>
@@ -79,11 +79,14 @@
     </section>
     <!-- Navigation HTML ends here -->
     <!-- About HTML begins here -->
-    <section id="about-out" class="about card">
+    <section id="about-card" class="about card">
         <div class="container">
             <div class="about-inner card-inner">
+                <div class="logo" onclick="aboutSlideOut()">
+                    <a href="#"><img src="images/logo.png" alt="logo" /></a>
+                </div>
                 <div class="card-collapse">
-                    <button id="card-btn">
+                    <button id="card-btn" onclick="aboutSlideOut()">
               <i class="fa-solid fa-arrow-right-long"></i>
             </button>
                 </div>
