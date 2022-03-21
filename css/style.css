@@ -21,6 +21,7 @@
 body {
   background-color: #1E1E1E;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   background-color: #1D1D1D;
 }
@@ -36,30 +37,32 @@ a {
   margin: 0 auto;
 }
 
-.header-inner {
-  padding: 2vh 0;
+header {
   border-bottom: 1px solid #1FFF0F;
   margin-bottom: 4vh;
+}
+header .header-inner {
+  padding: 2vh 0;
   position: relative;
 }
-.header-inner .logo {
+header .header-inner .logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.header-inner .social-links ul {
+header .header-inner .social-links ul {
   margin-left: auto;
   width: 2vw;
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-.header-inner .social-links ul li {
+header .header-inner .social-links ul li {
   list-style: none;
   margin-right: 8px;
 }
-.header-inner .social-links ul li a {
+header .header-inner .social-links ul li a {
   color: #1FFF0F;
   font-size: 20px;
 }
@@ -295,7 +298,7 @@ footer .footer-inner .copyright .copy-text {
 }
 
 .about-in {
-  right: 5vw;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
