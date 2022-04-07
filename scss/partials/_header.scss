@@ -2,21 +2,17 @@ header {
     border-bottom: 1px solid $primary-color;
     margin-bottom: 4vh;
     .header-inner {
-        padding: 2vh 0;
-        position: relative;
+        padding: 1vh 0 2vh 0;
         .logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            text-align: center;
         }
         .social-links {
+            margin-top: 2vh;
             ul {
-                margin-left: auto;
-                width: 2vw;
+                width: 80%;
+                margin: 0 auto;
                 display: flex;
-                flex-direction: column;
-                gap: 2vh;
+                justify-content: space-between;
                 li {
                     list-style: none;
                     margin-right: 8px;
