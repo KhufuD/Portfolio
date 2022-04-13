@@ -1,22 +1,22 @@
 footer {
     background-color: $footer-color;
-    margin-top: 2vh;
+    margin-top: 16px;
     .footer-inner {
-        padding-top: 3vh;
+        padding-top: 24px;
         .blog-btn {
-            margin-bottom: 3vh;
-            padding-left: 2vw;
+            margin-bottom: 24px;
+            padding-left: 16px;
             #blog {
                 background-color: $primary-color;
                 border: 1px solid transparent;
-                min-width: 12vw;
-                padding: 1.5vh 0 1.5vh 1vw;
+                min-width: 96px;
+                padding: 12px 0 12px 8px;
                 text-align: start;
                 @include large-text();
                 color: $footer-color;
                 font-weight: 600;
                 border-radius: 0 40px 40px 0;
-                letter-spacing: 0.2vw;
+                letter-spacing: 2px;
                 cursor: pointer;
                 transition: 0.4s ease-in-out;
                 &:hover {
@@ -31,13 +31,13 @@ footer {
         }
         .copyright {
             border-top: 1px solid $primary-color;
-            padding: 1.2vh 0;
+            padding: 10px 0;
             text-align: center;
             .copy-text {
                 @include large-text();
                 font-size: 14px;
                 font-weight: 300;
-                letter-spacing: 0.08vw;
+                letter-spacing: 1px;
             }
         }
     }
