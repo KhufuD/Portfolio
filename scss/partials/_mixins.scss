@@ -8,6 +8,15 @@
     letter-spacing: 8px;
 }
 
+@mixin heading-1() {
+    font-family: 'League Spartan';
+    font-size: $h1;
+    line-height: 2;
+    font-weight: 700;
+    color: $heading-color;
+    text-transform: uppercase;
+}
+
 @mixin large-text() {
     font-family: 'Playfair Display';
     font-size: $lg-text;
