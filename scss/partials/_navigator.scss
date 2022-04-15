@@ -31,7 +31,6 @@
                             overflow: hidden;
                             transition: 0.4s ease-in-out;
                             border-color: $primary-color;
-                            // border-bottom: 2px solid $primary-color;
                         }
                         &:hover::before {
                             height: 100%;

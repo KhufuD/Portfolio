@@ -1,0 +1,40 @@
+.banner {
+    margin: 24px 0;
+    position: relative;
+    margin-left: -1500px;
+    overflow: hidden;
+    -webkit-animation: slide-right 12s linear infinite both;
+    animation: slide-right 12s linear infinite both;
+    h1 {
+        @include heading-2;
+        font-size: $lg-text;
+        line-height: 1;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        color: $primary-color;
+        padding: 12px 16px;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(100vw + 1500px));
+        transform: translateX(calc(100vw + 1500px));
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(100vw + 1500px));
+        transform: translateX(calc(100vw + 1500px));
+    }
+}
