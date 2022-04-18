@@ -17,6 +17,7 @@
                     align-self: flex-start;
                     a {
                         @include heading-2();
+                        margin-bottom: 0;
                         position: relative;
                         font-size: 32px;
                         line-height: 1.6;

@@ -91,6 +91,8 @@ header .header-inner .social-links ul li a {
   color: #f5f5f5;
   text-transform: uppercase;
   letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-bottom: 0;
   position: relative;
   font-size: 32px;
   line-height: 1.6;
@@ -136,6 +138,7 @@ footer .footer-inner .blog-btn #blog {
   line-height: 1.1;
   font-weight: 400;
   color: #E3E3E3;
+  letter-spacing: 1px;
   color: #252526;
   font-weight: 600;
   border-radius: 0 40px 40px 0;
@@ -162,20 +165,23 @@ footer .footer-inner .copyright .copy-text {
   line-height: 1.1;
   font-weight: 400;
   color: #E3E3E3;
+  letter-spacing: 1px;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .banner {
+  overflow: hidden;
+}
+.banner .banner-inner {
   margin: 24px 0;
   position: relative;
   margin-left: -1500px;
-  overflow: hidden;
   -webkit-animation: slide-right 12s linear infinite both;
   animation: slide-right 12s linear infinite both;
 }
-.banner h1 {
+.banner .banner-inner h1 {
   font-family: "League Spartan";
   font-size: 40px;
   line-height: 1.1;
@@ -183,6 +189,7 @@ footer .footer-inner .copyright .copy-text {
   color: #f5f5f5;
   text-transform: uppercase;
   letter-spacing: 8px;
+  margin-bottom: 40px;
   font-size: 20px;
   line-height: 1;
   display: inline-block;
@@ -214,12 +221,12 @@ footer .footer-inner .copyright .copy-text {
 }
 .hero {
   padding: 0 16px;
-  margin-top: 48px;
+  margin: 120px 0;
 }
 .hero .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hero .hero-inner h1 {
   position: relative;
@@ -248,9 +255,10 @@ footer .footer-inner .copyright .copy-text {
 }
 .hero .hero-inner .hero-image {
   max-width: 400px;
-  max-height: 600px;
+  border: 4px solid #1FFF0F;
 }
 .hero .hero-inner .hero-image img {
+  margin: -40px 0 40px -40px;
   height: 100%;
   width: 100%;
 }
@@ -276,6 +284,46 @@ footer .footer-inner .copyright .copy-text {
   100% {
     width: 10%;
   }
+}
+.about .about-inner h2 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+}
+.about .about-inner .about-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.about .about-inner .about-flex .about-left {
+  max-width: 400px;
+  max-height: 400px;
+}
+.about .about-inner .about-flex .about-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .about-inner .about-flex .about-right {
+  max-width: 50%;
+  margin: auto 0;
+}
+.about .about-inner .about-flex .about-right p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+.about .about-inner .about-flex .about-right p:nth-child(2) {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

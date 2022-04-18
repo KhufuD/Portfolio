@@ -1,0 +1,32 @@
+.about {
+    .about-inner {
+        h2 {
+            @include heading-2;
+        }
+        .about-flex {
+            display: flex;
+            justify-content: space-around;
+            .about-left {
+                max-width: 400px;
+                max-height: 400px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .about-right {
+                max-width: 50%;
+                margin: auto 0;
+                p {
+                    @include large-text;
+                    line-height: 2;
+                    margin-bottom: 24px;
+                    &:nth-child(2) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

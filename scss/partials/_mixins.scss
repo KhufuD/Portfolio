@@ -6,6 +6,7 @@
     color: $heading-color;
     text-transform: uppercase;
     letter-spacing: 8px;
+    margin-bottom: 40px;
 }
 
 @mixin heading-1() {
@@ -23,6 +24,7 @@
     line-height: 1.1;
     font-weight: 400;
     color: $text-color;
+    letter-spacing: 1px;
 }
 
 @mixin flex() {

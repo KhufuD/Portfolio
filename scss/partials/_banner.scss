@@ -1,19 +1,21 @@
 .banner {
-    margin: 24px 0;
-    position: relative;
-    margin-left: -1500px;
     overflow: hidden;
-    -webkit-animation: slide-right 12s linear infinite both;
-    animation: slide-right 12s linear infinite both;
-    h1 {
-        @include heading-2;
-        font-size: $lg-text;
-        line-height: 1;
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-        color: $primary-color;
-        padding: 12px 16px;
+    .banner-inner {
+        margin: 24px 0;
+        position: relative;
+        margin-left: -1500px;
+        -webkit-animation: slide-right 12s linear infinite both;
+        animation: slide-right 12s linear infinite both;
+        h1 {
+            @include heading-2;
+            font-size: $lg-text;
+            line-height: 1;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            color: $primary-color;
+            padding: 12px 16px;
+        }
     }
 }
 
