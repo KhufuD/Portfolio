@@ -2,6 +2,7 @@
     .about-inner {
         h2 {
             @include heading-2;
+            text-align: center;
         }
         .about-flex {
             display: flex;

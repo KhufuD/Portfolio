@@ -294,6 +294,7 @@ footer .footer-inner .copyright .copy-text {
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-bottom: 40px;
+  text-align: center;
 }
 .about .about-inner .about-flex {
   display: flex;
@@ -324,6 +325,66 @@ footer .footer-inner .copyright .copy-text {
 }
 .about .about-inner .about-flex .about-right p:nth-child(2) {
   margin-bottom: 0;
+}
+
+.portfolio {
+  margin: 120px 0;
+}
+.portfolio .portfolio-inner h2 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.portfolio .portfolio-inner .coming-soon {
+  height: 500px;
+  background-color: #1FFF0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio .portfolio-inner .coming-soon h3 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  font-size: 60px;
+  margin-bottom: 0;
+  color: #1D1D1D;
+}
+.portfolio .portfolio-inner .coming-soon p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+}
+.portfolio .portfolio-inner .coming-soon p span {
+  display: block;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  margin-top: 16px;
+  color: #1D1D1D;
 }
 
 /*# sourceMappingURL=style.css.map */

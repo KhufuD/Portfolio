@@ -1,0 +1,35 @@
+.portfolio {
+    margin: 120px 0;
+    .portfolio-inner {
+        h2 {
+            @include heading-2;
+            text-align: center;
+        }
+        .coming-soon {
+            height: 500px;
+            background-color: $primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+                @include heading-2;
+                font-size: 60px;
+                margin-bottom: 0;
+                color: $background-color
+            }
+            p {
+                @include large-text;
+                color: $background-color;
+                span {
+                    display: block;
+                    text-align: center;
+                    @include heading-2;
+                    font-size: 32px;
+                    margin-top: 16px;
+                    color: $background-color;
+                }
+            }
+        }
+    }
+}
