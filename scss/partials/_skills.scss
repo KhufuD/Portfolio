@@ -1,0 +1,35 @@
+.skills {
+    .skills-inner {
+        h2 {
+            @include heading-2;
+            text-align: center;
+        }
+        .skill-flex {
+            display: flex;
+            justify-content: space-between;
+            .skills-left {
+                border: 1px solid white;
+                width: 50%;
+                ul {
+                    list-style: none;
+                    li {
+                        background-color: $footer-color;
+                        margin-bottom: 16px;
+                        padding: 6px 16px;
+                        border-radius: 32px;
+                        &:nth-child(7) {
+                            margin-bottom: 0
+                        }
+                        p {
+                            @include large-text;
+                        }
+                    }
+                }
+            }
+            .skills-right {
+                border: 1px solid white;
+                width: 50%;
+            }
+        }
+    }
+}
