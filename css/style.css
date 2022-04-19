@@ -400,23 +400,20 @@ footer .footer-inner .copyright .copy-text {
 }
 .skills .skills-inner .skill-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .skills .skills-inner .skill-flex .skills-left {
-  border: 1px solid white;
-  width: 50%;
+  width: 40%;
 }
 .skills .skills-inner .skill-flex .skills-left ul {
   list-style: none;
 }
 .skills .skills-inner .skill-flex .skills-left ul li {
-  background-color: #252526;
+  width: 0%;
   margin-bottom: 16px;
   padding: 6px 16px;
-  border-radius: 32px;
-}
-.skills .skills-inner .skill-flex .skills-left ul li:nth-child(7) {
-  margin-bottom: 0;
+  border-radius: 8px;
+  transition: 1s ease-in-out;
 }
 .skills .skills-inner .skill-flex .skills-left ul li p {
   font-family: "Playfair Display";
@@ -425,10 +422,58 @@ footer .footer-inner .copyright .copy-text {
   font-weight: 400;
   color: #E3E3E3;
   letter-spacing: 1px;
+  padding: 4px 16px;
+  border-radius: 32px;
+}
+.skills .skills-inner .skill-flex .skills-left ul:hover li {
+  width: 100%;
+}
+.skills .skills-inner .skill-flex .skills-left ul:hover li #html,
+.skills .skills-inner .skill-flex .skills-left ul:hover li #bootstrap {
+  width: 60%;
+  background-color: #1FFF0F;
+}
+.skills .skills-inner .skill-flex .skills-left ul:hover li #css,
+.skills .skills-inner .skill-flex .skills-left ul:hover li #sass {
+  width: 90%;
+  background-color: #1FFF0F;
+}
+.skills .skills-inner .skill-flex .skills-left ul:hover li #javascript,
+.skills .skills-inner .skill-flex .skills-left ul:hover li #gsap,
+.skills .skills-inner .skill-flex .skills-left ul:hover li #webflow {
+  width: 28%;
+  background-color: #1FFF0F;
+}
+.skills .skills-inner .skill-flex .skills-left ul:hover li p {
+  font-weight: 700;
 }
 .skills .skills-inner .skill-flex .skills-right {
-  border: 1px solid white;
-  width: 50%;
+  width: 40%;
+}
+.skills .skills-inner #progress-mark {
+  margin-bottom: 0;
+  display: flex;
+  background-color: unset;
+  margin-left: 96px;
+}
+.skills .skills-inner #progress-mark span {
+  margin: 0 8px;
+  width: 104px;
+  height: 1px;
+  align-self: center;
+  background-color: #1FFF0F;
+}
+.skills .skills-inner #progress-mark p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,8 +26,3 @@
     color: $text-color;
     letter-spacing: 1px;
 }
-
-@mixin flex() {
-    display: flex;
-    justify-content: space-between;
-}
