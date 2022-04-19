@@ -21,3 +21,8 @@ a {
     max-width: calc(100vw - 20vw);
     margin: 0 auto;
 }
+
+textarea,
+input:focus {
+    outline: none;
+}

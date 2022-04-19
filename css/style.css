@@ -36,6 +36,11 @@ a {
   margin: 0 auto;
 }
 
+textarea,
+input:focus {
+  outline: none;
+}
+
 header {
   border-bottom: 1px solid #1FFF0F;
 }
@@ -423,7 +428,7 @@ footer .footer-inner .copyright .copy-text {
   color: #E3E3E3;
   letter-spacing: 1px;
   padding: 4px 16px;
-  border-radius: 32px;
+  border-radius: 12px;
 }
 .skills .skills-inner .skill-flex .skills-left ul:hover li {
   width: 100%;
@@ -474,6 +479,68 @@ footer .footer-inner .copyright .copy-text {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   text-transform: capitalize;
+}
+
+.news-letter {
+  margin: 120px 0;
+}
+.news-letter .news-inner {
+  padding: 56px 0;
+  background-color: #252526;
+}
+.news-letter .news-inner h2 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.news-letter .news-inner .form {
+  width: 40%;
+  margin: 0 auto;
+}
+.news-letter .news-inner .form p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.news-letter .news-inner .form form #email {
+  border: unset;
+  min-width: 500px;
+  padding: 16px 8px;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #1D1D1D;
+}
+.news-letter .news-inner .form form #submit {
+  border: unset;
+  padding: 16px 24px;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background-color: #1FFF0F;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #1D1D1D;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
