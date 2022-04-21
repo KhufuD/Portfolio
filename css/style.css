@@ -424,7 +424,10 @@ footer .copyright .copy-text {
   color: #1D1D1D;
 }
 
-.skills .skills-inner h2 {
+.skills .container {
+  overflow: hidden;
+}
+.skills .container .skills-inner h2 {
   font-family: "League Spartan";
   font-size: 40px;
   line-height: 1.1;
@@ -435,82 +438,46 @@ footer .copyright .copy-text {
   margin-bottom: 40px;
   text-align: center;
 }
-.skills .skills-inner .skill-flex {
+.skills .container .skills-inner .skill-percentage {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  transition: 0.6s ease-in-out;
 }
-.skills .skills-inner .skill-flex .skills-left {
+.skills .container .skills-inner .skill-percentage .skill-list {
   width: 40%;
 }
-.skills .skills-inner .skill-flex .skills-left ul {
-  list-style: none;
-}
-.skills .skills-inner .skill-flex .skills-left ul li {
-  width: 0%;
-  margin-bottom: 16px;
-  padding: 6px 16px;
-  border-radius: 8px;
-  transition: 1s ease-in-out;
-}
-.skills .skills-inner .skill-flex .skills-left ul li p {
-  font-family: "Playfair Display";
-  font-size: 20px;
+.skills .container .skills-inner .skill-percentage .skill-list h3 {
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 40px;
   line-height: 1.1;
-  font-weight: 400;
-  color: #E3E3E3;
-  letter-spacing: 1px;
-  padding: 4px 16px;
-  border-radius: 12px;
-}
-.skills .skills-inner .skill-flex .skills-left ul:hover li {
-  width: 100%;
-}
-.skills .skills-inner .skill-flex .skills-left ul:hover li #html,
-.skills .skills-inner .skill-flex .skills-left ul:hover li #bootstrap {
-  width: 60%;
-  background-color: #1FFF0F;
-}
-.skills .skills-inner .skill-flex .skills-left ul:hover li #css,
-.skills .skills-inner .skill-flex .skills-left ul:hover li #sass {
-  width: 90%;
-  background-color: #1FFF0F;
-}
-.skills .skills-inner .skill-flex .skills-left ul:hover li #javascript,
-.skills .skills-inner .skill-flex .skills-left ul:hover li #gsap,
-.skills .skills-inner .skill-flex .skills-left ul:hover li #webflow {
-  width: 28%;
-  background-color: #1FFF0F;
-}
-.skills .skills-inner .skill-flex .skills-left ul:hover li p {
   font-weight: 700;
-}
-.skills .skills-inner .skill-flex .skills-right {
-  width: 40%;
-}
-.skills .skills-inner #progress-mark {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  font-size: 28px;
   margin-bottom: 0;
-  display: flex;
-  background-color: unset;
-  margin-left: 96px;
+  padding: 12px 0 0 0;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 24px;
 }
-.skills .skills-inner #progress-mark span {
-  margin: 0 8px;
-  width: 104px;
-  height: 1px;
-  align-self: center;
+.skills .container .skills-inner .skill-percentage .skill-list h3 .quality {
+  display: block;
+  color: #1D1D1D;
+  transition: 0.5s ease-in-out;
+  border: unset;
+  padding: 8px 0;
+  position: absolute;
+  inset: 0;
+  left: -100vw;
+}
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 .quality {
+  display: block;
   background-color: #1FFF0F;
-}
-.skills .skills-inner #progress-mark p {
-  font-family: "Playfair Display";
-  font-size: 20px;
-  line-height: 1.1;
-  font-weight: 400;
-  color: #E3E3E3;
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  text-transform: capitalize;
+  inset: 0;
 }
 
 .hire-me {
