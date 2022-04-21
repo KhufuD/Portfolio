@@ -3,42 +3,64 @@ footer {
     margin-top: 16px;
     .footer-inner {
         padding-top: 24px;
-        .blog-btn {
+        .footer-top {
             margin-bottom: 24px;
-            padding-left: 16px;
-            #blog {
-                background-color: $primary-color;
-                border: 1px solid transparent;
-                min-width: 96px;
-                padding: 12px 0 12px 8px;
-                text-align: start;
-                @include large-text();
-                color: $footer-color;
-                font-weight: 600;
-                border-radius: 0 40px 40px 0;
-                letter-spacing: 2px;
-                cursor: pointer;
-                transition: 0.4s ease-in-out;
-                &:hover {
-                    color: $primary-color;
-                    border: 1px solid $primary-color;
-                    background-color: transparent;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            .col-right {
+                width: 30%;
+                .footer-logo {
+                    margin-top: -11px;
+                }
+                p {
+                    @include large-text;
+                    font-size: $sm-text;
                 }
             }
-            .btn-span {
-                padding-left: 0.5vw;
+            .col-center {
+                width: 50%;
+                h4 {
+                    @include heading-2;
+                    font-size: 24px;
+                    margin-bottom: 12px;
+                }
+                p {
+                    @include large-text;
+                    font-size: $sm-text;
+                    margin-bottom: 12px;
+                    line-height: 1.2;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .social-links-footer {
+                width: 10%;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: flex-end;
+                    li {
+                        a {
+                            color: $primary-color;
+                        }
+                    }
+                }
             }
         }
-        .copyright {
-            border-top: 1px solid $primary-color;
-            padding: 10px 0;
-            text-align: center;
-            .copy-text {
-                @include large-text();
-                font-size: 14px;
-                font-weight: 300;
-                letter-spacing: 1px;
-            }
+    }
+    .copyright {
+        border-top: 1px solid $primary-color;
+        padding: 10px 0;
+        text-align: center;
+        .copy-text {
+            @include large-text();
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
         }
     }
 }

@@ -128,43 +128,75 @@ footer {
 footer .footer-inner {
   padding-top: 24px;
 }
-footer .footer-inner .blog-btn {
+footer .footer-inner .footer-top {
   margin-bottom: 24px;
-  padding-left: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
-footer .footer-inner .blog-btn #blog {
-  background-color: #1FFF0F;
-  border: 1px solid transparent;
-  min-width: 96px;
-  padding: 12px 0 12px 8px;
-  text-align: start;
+footer .footer-inner .footer-top .col-right {
+  width: 30%;
+}
+footer .footer-inner .footer-top .col-right .footer-logo {
+  margin-top: -11px;
+}
+footer .footer-inner .footer-top .col-right p {
   font-family: "Playfair Display";
   font-size: 20px;
   line-height: 1.1;
   font-weight: 400;
   color: #E3E3E3;
   letter-spacing: 1px;
-  color: #252526;
-  font-weight: 600;
-  border-radius: 0 40px 40px 0;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
+  font-size: 12px;
 }
-footer .footer-inner .blog-btn #blog:hover {
+footer .footer-inner .footer-top .col-center {
+  width: 50%;
+}
+footer .footer-inner .footer-top .col-center h4 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+footer .footer-inner .footer-top .col-center p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+footer .footer-inner .footer-top .col-center p:last-child {
+  margin-bottom: 0;
+}
+footer .footer-inner .footer-top .social-links-footer {
+  width: 10%;
+}
+footer .footer-inner .footer-top .social-links-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+footer .footer-inner .footer-top .social-links-footer ul li a {
   color: #1FFF0F;
-  border: 1px solid #1FFF0F;
-  background-color: transparent;
 }
-footer .footer-inner .blog-btn .btn-span {
-  padding-left: 0.5vw;
-}
-footer .footer-inner .copyright {
+footer .copyright {
   border-top: 1px solid #1FFF0F;
   padding: 10px 0;
   text-align: center;
 }
-footer .footer-inner .copyright .copy-text {
+footer .copyright .copy-text {
   font-family: "Playfair Display";
   font-size: 20px;
   line-height: 1.1;
@@ -557,14 +589,29 @@ footer .footer-inner .copyright .copy-text {
   letter-spacing: 1px;
   background-color: #1FFF0F;
   color: #1D1D1D;
-  font-weight: 500;
-  transition: 0.5s ease-in-out;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
 }
 .hire-me .hire-me-inner .mailing-form form #submit:hover {
   background-color: transparent;
   border: 1px solid #1FFF0F;
   color: #1FFF0F;
   cursor: pointer;
+}
+
+.blog {
+  margin-bottom: 160px;
+}
+.blog h2 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

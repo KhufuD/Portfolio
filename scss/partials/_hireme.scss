@@ -53,8 +53,8 @@
                     @include large-text;
                     background-color: $primary-color;
                     color: $background-color;
-                    font-weight: 500;
-                    transition: 0.5s ease-in-out;
+                    font-weight: 600;
+                    transition: 0.3s ease-in-out;
                     &:hover {
                         background-color: transparent;
                         border: 1px solid $primary-color;
