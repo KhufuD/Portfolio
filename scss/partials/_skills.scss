@@ -1,6 +1,5 @@
 .skills {
     .container {
-        overflow: hidden;
         .skills-inner {
             h2 {
                 @include heading-2;
@@ -13,6 +12,7 @@
                 transition: 0.6s ease-in-out;
                 .skill-list {
                     width: 40%;
+                    overflow: hidden;
                     h3 {
                         // border: 1px solid $primary-color;
                         text-align: center;
@@ -27,21 +27,24 @@
                             display: block;
                             color: $background-color;
                             transition: 0.5s ease-in-out;
-                            // width: 0;
                             border: unset;
                             padding: 8px 0;
                             position: absolute;
                             inset: 0;
+                        }
+                        #html,
+                        #javascript,
+                        #bootstrap,
+                        #webflow {
                             left: -100vw;
-                            // border-top: 1px solid $primary-color;
+                        }
+                        #css,
+                        #scss,
+                        #gsap,
+                        #elementor {
+                            right: -100vw;
                         }
                     }
-                    // &:nth-child(1),
-                    // &:nth-child(2),
-                    // &:nth-child(3),
-                    // &:nth-child(4) {
-                    //     margin-bottom: 24px;
-                    // }
                 }
                 &:hover {
                     .skill-list {
@@ -50,6 +53,18 @@
                                 display: block;
                                 background-color: $primary-color;
                                 inset: 0;
+                            }
+                            #html,
+                            #javascript,
+                            #bootstrap,
+                            #webflow {
+                                left: 0;
+                            }
+                            #css,
+                            #scss,
+                            #gsap,
+                            #elementor {
+                                right: 0;
                             }
                         }
                     }

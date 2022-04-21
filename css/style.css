@@ -424,9 +424,6 @@ footer .copyright .copy-text {
   color: #1D1D1D;
 }
 
-.skills .container {
-  overflow: hidden;
-}
 .skills .container .skills-inner h2 {
   font-family: "League Spartan";
   font-size: 40px;
@@ -446,6 +443,7 @@ footer .copyright .copy-text {
 }
 .skills .container .skills-inner .skill-percentage .skill-list {
   width: 40%;
+  overflow: hidden;
 }
 .skills .container .skills-inner .skill-percentage .skill-list h3 {
   text-align: center;
@@ -472,12 +470,35 @@ footer .copyright .copy-text {
   padding: 8px 0;
   position: absolute;
   inset: 0;
+}
+.skills .container .skills-inner .skill-percentage .skill-list h3 #html,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #javascript,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #bootstrap,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #webflow {
   left: -100vw;
+}
+.skills .container .skills-inner .skill-percentage .skill-list h3 #css,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #scss,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #gsap,
+.skills .container .skills-inner .skill-percentage .skill-list h3 #elementor {
+  right: -100vw;
 }
 .skills .container .skills-inner .skill-percentage:hover .skill-list h3 .quality {
   display: block;
   background-color: #1FFF0F;
   inset: 0;
+}
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #html,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #javascript,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #bootstrap,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #webflow {
+  left: 0;
+}
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #css,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #scss,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #gsap,
+.skills .container .skills-inner .skill-percentage:hover .skill-list h3 #elementor {
+  right: 0;
 }
 
 .hire-me {
