@@ -602,4 +602,45 @@ footer .copyright .copy-text {
   text-align: center;
 }
 
+#up-top span {
+  color: #1FFF0F;
+  font-size: 46px;
+  position: fixed;
+  right: 40px;
+  bottom: 80px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  -webkit-animation: slide-top 1s linear infinite both;
+  animation: slide-top 1s linear infinite both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
