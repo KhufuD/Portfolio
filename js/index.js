@@ -26,9 +26,32 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-var arrow = document.getElementById("arrow-up");
+var scrollPosition = window.scrollY;
+var navBar = document.getElementById('navigate');
 
-function scrolled() {
-    var checking = window.distance(100);
-    arrow.classList.add("show-arrow");
-}
+window.addEventListener('scroll', function() {
+
+    scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 325.68) {
+        navBar.classList.add('nav-scrolled');
+    } else {
+        navBar.classList.remove('nav-scrolled');
+    }
+
+});
+
+var arrowScrollPosition = window.scrollY;
+var topArrow = document.getElementById('arrow-up');
+
+window.addEventListener('scroll', function() {
+
+    arrowScrollPosition = window.scrollY;
+
+    if (arrowScrollPosition >= 325.68) {
+        topArrow.classList.add('show-arrow');
+    } else {
+        topArrow.classList.remove('show-arrow');
+    }
+
+});

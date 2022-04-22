@@ -1,6 +1,7 @@
 #up-top {
-    span {
-        // display: none;
+    
+    #arrow-up {
+        
         color: $primary-color;
         font-size: $h1;
         position: fixed;
@@ -42,3 +43,4 @@
         transform: translateY(0);
     }
 }
+
