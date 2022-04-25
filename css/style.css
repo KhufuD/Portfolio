@@ -70,7 +70,7 @@ header .header-inner .social-links ul li a {
 
 .navigator {
   background-color: #1D1D1D;
-  padding-top: 32px;
+  transition: 0.5s ease-in;
   top: 0;
   z-index: 20;
 }
@@ -122,6 +122,8 @@ header .header-inner .social-links ul li a {
 .nav-scrolled {
   position: fixed;
   width: 100%;
+  padding-top: 48px;
+  box-shadow: 0px 6px 12px -8px #1FFF0F;
 }
 
 footer {
