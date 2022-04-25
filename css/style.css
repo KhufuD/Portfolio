@@ -41,6 +41,10 @@ input:focus {
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   border-bottom: 1px solid #1FFF0F;
 }
@@ -70,7 +74,6 @@ header .header-inner .social-links ul li a {
 
 .navigator {
   background-color: #1D1D1D;
-  transition: 0.5s ease-in;
   top: 0;
   z-index: 20;
 }
@@ -121,11 +124,32 @@ header .header-inner .social-links ul li a {
 
 .nav-scrolled {
   position: fixed;
-  width: 100%;
-  padding-top: 48px;
-  box-shadow: 0px 6px 12px -8px #1FFF0F;
+  transform: rotate(90deg);
+  margin-left: -19vw;
+  margin-top: 45vh;
+  border-radius: 16px 16px 0 0;
+  padding: 48px 0 32px 0;
+  box-shadow: 0px -6px 12px -8px #1FFF0F;
+  -webkit-animation: nav-show 1s ease-in-out both;
+  animation: nav-show 1s ease-in-out both;
 }
 
+@-webkit-keyframes nav-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes nav-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   background-color: #252526;
   margin-top: 16px;
@@ -153,6 +177,8 @@ footer .footer-inner .footer-top .col-right p {
   color: #E3E3E3;
   letter-spacing: 1px;
   font-size: 12px;
+  text-align: justify;
+  width: 72%;
 }
 footer .footer-inner .footer-top .col-center {
   width: 50%;
@@ -179,6 +205,7 @@ footer .footer-inner .footer-top .col-center p {
   font-size: 12px;
   margin-bottom: 12px;
   line-height: 1.2;
+  text-align: justify;
 }
 footer .footer-inner .footer-top .col-center p:last-child {
   margin-bottom: 0;
@@ -363,6 +390,7 @@ footer .copyright .copy-text {
   color: #E3E3E3;
   letter-spacing: 1px;
   line-height: 2;
+  text-align: justify;
   margin-bottom: 24px;
 }
 .about .about-inner .about-flex .about-right p:nth-child(2) {
@@ -609,16 +637,23 @@ footer .copyright .copy-text {
   text-align: center;
 }
 
+#up-top {
+  transition: 0.4s ease-in-out;
+}
 #up-top #arrow-up {
   color: #1FFF0F;
-  font-size: 46px;
+  font-size: 72px;
   position: fixed;
-  right: 40px;
+  right: -80px;
   bottom: 80px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
   -webkit-animation: slide-top 1s linear infinite both;
   animation: slide-top 1s linear infinite both;
+  transition: 0.3s ease-in-out !important;
+}
+#up-top .show-arrow {
+  right: 40px !important;
 }
 
 @-webkit-keyframes slide-top {

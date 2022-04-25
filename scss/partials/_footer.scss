@@ -16,6 +16,8 @@ footer {
                 p {
                     @include large-text;
                     font-size: $sm-text;
+                    text-align: justify;
+                    width: 72%;
                 }
             }
             .col-center {
@@ -30,6 +32,7 @@ footer {
                     font-size: $sm-text;
                     margin-bottom: 12px;
                     line-height: 1.2;
+                    text-align: justify;
                     &:last-child {
                         margin-bottom: 0;
                     }

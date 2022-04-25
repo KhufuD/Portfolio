@@ -1,7 +1,5 @@
 .navigator {
     background-color: $background-color;
-    
-    transition: 0.5s ease-in;
     top: 0;
     z-index: 20;
     .navigator-inner {
@@ -47,7 +45,35 @@
 
 .nav-scrolled{
     position: fixed;
-    width: 100%;
-    padding-top: 48px;
-    box-shadow: 0px 6px 12px -8px $primary-color;
+    transform: rotate(90deg);
+    margin-left: -19vw;
+    margin-top: 45vh;
+    border-radius: 16px 16px 0 0;
+    padding: 48px 0 32px 0;
+    box-shadow: 0px -6px 12px -8px $primary-color;
+    -webkit-animation: nav-show 1s ease-in-out both;
+    animation: nav-show 1s ease-in-out both;
 }
+
+@-webkit-keyframes nav-show {
+    0% {
+
+      opacity: 0;
+    }
+    100% {
+
+      opacity: 1;
+    }
+    
+  }
+  @keyframes nav-show {
+    0% {
+
+      opacity: 0;
+    }
+    100% {
+
+      opacity: 1;
+    }
+  }
+  

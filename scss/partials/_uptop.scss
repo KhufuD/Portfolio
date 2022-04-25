@@ -1,17 +1,24 @@
 #up-top {
-    
-    #arrow-up {
-        
-        color: $primary-color;
-        font-size: $h1;
-        position: fixed;
-        right: 40px;
-        bottom: 80px;
-        cursor: pointer;
+   
         transition: 0.4s ease-in-out;
-        -webkit-animation: slide-top 1s linear infinite both;
-        animation: slide-top 1s linear infinite both;
-    }
+        #arrow-up {
+            color: $primary-color;
+            font-size: 72px;
+            position: fixed;
+            right: -80px;
+            bottom: 80px;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            -webkit-animation: slide-top 1s linear infinite both;
+            animation: slide-top 1s linear infinite both;
+            transition: 0.3s ease-in-out !important;
+    
+        }
+        .show-arrow{
+      
+            right: 40px !important;
+        }
+   
 }
 
 @-webkit-keyframes slide-top {

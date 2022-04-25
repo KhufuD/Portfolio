@@ -55,3 +55,7 @@ window.addEventListener('scroll', function() {
     }
 
 });
+
+topArrow.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
