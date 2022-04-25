@@ -18,19 +18,23 @@
                         text-align: center;
                         @include heading-2;
                         font-size: 28px;
-                        margin-bottom: 0;
+                        
                         padding: 12px 0 0 0;
                         line-height: 1;
                         position: relative;
-                        margin-bottom: 24px;
+                        margin-bottom: 40px;
                         .quality {
                             display: block;
                             color: $background-color;
                             transition: 0.5s ease-in-out;
                             border: unset;
+                            height: 100%;
                             padding: 8px 0;
                             position: absolute;
                             inset: 0;
+                            top: 100%;
+                            
+                            
                         }
                         #html,
                         #javascript,
@@ -53,6 +57,9 @@
                                 display: block;
                                 background-color: $primary-color;
                                 inset: 0;
+                                top: 100%;
+                             
+                                
                             }
                             #html,
                             #javascript,

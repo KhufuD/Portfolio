@@ -459,20 +459,21 @@ footer .copyright .copy-text {
   letter-spacing: 8px;
   margin-bottom: 40px;
   font-size: 28px;
-  margin-bottom: 0;
   padding: 12px 0 0 0;
   line-height: 1;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 .skills .container .skills-inner .skill-percentage .skill-list h3 .quality {
   display: block;
   color: #1D1D1D;
   transition: 0.5s ease-in-out;
   border: unset;
+  height: 100%;
   padding: 8px 0;
   position: absolute;
   inset: 0;
+  top: 100%;
 }
 .skills .container .skills-inner .skill-percentage .skill-list h3 #html,
 .skills .container .skills-inner .skill-percentage .skill-list h3 #javascript,
@@ -490,6 +491,7 @@ footer .copyright .copy-text {
   display: block;
   background-color: #1FFF0F;
   inset: 0;
+  top: 100%;
 }
 .skills .container .skills-inner .skill-percentage:hover .skill-list h3 #html,
 .skills .container .skills-inner .skill-percentage:hover .skill-list h3 #javascript,
