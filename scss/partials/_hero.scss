@@ -5,24 +5,43 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        h1 {
-            position: relative;
-            &::after {
-                content: '';
-                background-color: $primary-color;
-                position: absolute;
-                height: 3px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                -webkit-animation: indicator 3s ease-in-out infinite both;
-                animation: indicator 3s ease-in-out infinite both;
+        .hero-left{
+            h1 {
+                position: relative;
+                margin-bottom: 32px;
+                &::after {
+                    content: '';
+                    background-color: $primary-color;
+                    position: absolute;
+                    height: 3px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    -webkit-animation: indicator 3s ease-in-out infinite both;
+                    animation: indicator 3s ease-in-out infinite both;
+                }
+                .text-animation {
+                    @include heading-1;
+                    font-size: 64px;
+                    letter-spacing: 12px;
+                    transition: 0.3s ease-in-out;
+                }
             }
-            .text-animation {
-                @include heading-1;
-                font-size: 64px;
-                letter-spacing: 12px;
-                transition: 0.3s ease-in-out;
+            a{
+                background-color: $primary-color;
+                padding: 12px 40px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                text-transform: uppercase;
+                @include large-text;
+                color: $background-color;
+                font-weight: 800;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $background-color;
+                    border: 1px solid $primary-color;
+                }
             }
         }
         .hero-image {

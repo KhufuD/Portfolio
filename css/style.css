@@ -268,10 +268,11 @@ footer .copyright .copy-text {
   align-items: center;
   justify-content: space-around;
 }
-.hero .hero-inner h1 {
+.hero .hero-inner .hero-left h1 {
   position: relative;
+  margin-bottom: 32px;
 }
-.hero .hero-inner h1::after {
+.hero .hero-inner .hero-left h1::after {
   content: "";
   background-color: #1FFF0F;
   position: absolute;
@@ -282,7 +283,7 @@ footer .copyright .copy-text {
   -webkit-animation: indicator 3s ease-in-out infinite both;
   animation: indicator 3s ease-in-out infinite both;
 }
-.hero .hero-inner h1 .text-animation {
+.hero .hero-inner .hero-left h1 .text-animation {
   font-family: "League Spartan";
   font-size: 46px;
   line-height: 1.3;
@@ -292,6 +293,27 @@ footer .copyright .copy-text {
   font-size: 64px;
   letter-spacing: 12px;
   transition: 0.3s ease-in-out;
+}
+.hero .hero-inner .hero-left a {
+  background-color: #1FFF0F;
+  padding: 12px 40px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  font-weight: 800;
+  transition: 0.4s ease-in-out;
+}
+.hero .hero-inner .hero-left a:hover {
+  color: #1FFF0F;
+  background-color: #1D1D1D;
+  border: 1px solid #1FFF0F;
 }
 .hero .hero-inner .hero-image {
   max-width: 400px;
@@ -365,7 +387,28 @@ footer .copyright .copy-text {
   margin-bottom: 24px;
 }
 .about .about-inner .about-flex .about-right p:nth-child(2) {
-  margin-bottom: 0;
+  margin-bottom: 48px;
+}
+.about .about-inner .about-flex .about-right a {
+  background-color: #1FFF0F;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  font-weight: 800;
+  transition: 0.4s ease-in-out;
+}
+.about .about-inner .about-flex .about-right a:hover {
+  color: #1FFF0F;
+  background-color: #1D1D1D;
+  border: 1px solid #1FFF0F;
 }
 
 .portfolio {
@@ -743,6 +786,32 @@ footer .copyright .copy-text {
 .blog hr {
   margin: 12px 0;
   color: #E3E3E3;
+}
+.blog .blog-link {
+  text-align: center;
+  margin-top: 24px;
+}
+.blog .blog-link #blog-link {
+  background-color: #1FFF0F;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  font-weight: 800;
+  transition: 0.4s ease-in-out;
+  margin-left: auto;
+}
+.blog .blog-link #blog-link:hover {
+  color: #1FFF0F;
+  background-color: #1D1D1D;
+  border: 1px solid #1FFF0F;
 }
 
 #up-top {

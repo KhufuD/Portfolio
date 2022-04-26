@@ -113,7 +113,7 @@ function sendEmail(){
         Username : "khufudev@gmail.com",
         Password : "Roronoa.zoro1",
         To : 'khufudev@gmail.com',
-        From : document.getElementById("email").value,
+        From : "khufudevelopment@gmail.com",
         Subject : "Email from the website",
         Body : "And this is the body"
     }).then(
