@@ -593,87 +593,134 @@ footer .copyright .copy-text {
   cursor: pointer;
 }
 
-a {
+.blog {
+  margin-bottom: 160px;
+}
+.blog h2 {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.blog a {
   color: inherit;
   text-decoration: none;
 }
-
-ul {
+.blog ul {
   list-style: none;
 }
-
-.blog {
+.blog .blog {
   margin: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.blog__header {
+.blog .blog__header {
   text-align: center;
 }
-.blog__header1 {
+.blog .blog__header1 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 }
-.blog__header2 {
+.blog .blog__header2 {
   margin-top: 0.3rem;
   font-size: 1.4rem;
   font-weight: 500;
 }
-.blog__header2Span {
+.blog .blog__header2Span {
   font-weight: 400;
   font-size: 1.25rem;
 }
-.blog__slider {
+.blog .blog__slider {
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.blog__post {
+.blog .blog__post {
   margin: 3rem 1rem;
   width: 25%;
   -webkit-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out;
 }
-.blog__topImg {
+.blog .blog__post:hover {
+  box-shadow: unset;
+}
+.blog .blog__topImg {
   max-width: 100%;
+  width: 450px;
+  height: 240px;
+  object-fit: cover;
 }
-.blog__content {
+.blog .blog__content {
   padding: 0.8rem;
 }
-.blog__preview {
+.blog .blog__preview {
   font-size: 0.95rem;
   font-weight: 300;
 }
-.blog__title {
-  margin-top: 0;
-  font-size: 1.4rem;
+.blog .blog__title {
+  font-family: "League Spartan";
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 4px;
 }
-.blog__intro {
+.blog .blog__intro {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 16px;
   line-height: 1.5;
 }
-.blog__info {
+.blog .blog__info {
   font-weight: 300;
 }
-.blog__author {
-  font-size: 0.9rem;
+.blog .blog__author {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
-.blog__date {
-  font-size: 0.85rem;
+.blog .blog__date {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #E3E3E3;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
-.blog__counter {
+.blog .blog__counter {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
 }
-.blog__counterItem {
+.blog .blog__counterItem {
   height: 20px;
   width: 20px;
   margin: 0.5rem;
@@ -681,12 +728,16 @@ ul {
   border: 1px solid lightgray;
   border-radius: 25px;
 }
-.blog__counterItem:hover {
+.blog .blog__counterItem:hover {
   cursor: pointer;
 }
-.blog__counterItem-active {
+.blog .blog__counterItem-active {
   border: 1px solid lightblue;
   background-color: lightblue;
+}
+.blog hr {
+  margin: 12px 0;
+  color: #E3E3E3;
 }
 
 #up-top {
