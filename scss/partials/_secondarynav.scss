@@ -5,10 +5,10 @@
     position: fixed;
     left: -100vw;
     top: 22.2vw;
-    width: 96vh;
-    border-radius: 16px 16px 0 0;
+    width: 100vh;
+
     padding: 48px 0 32px 0;
-    box-shadow: 0px -6px 12px -8px $primary-color;
+    box-shadow: 0px -6px 12px -8px $background-color;
     transition: 0.3s ease-in-out;
         nav {
 
@@ -55,7 +55,7 @@
 
 .nav-scrolled{
     display: block !important;
-    left: -22vw;
+    left: -23vw;
     // -webkit-animation: nav-show 1s ease-in-out both;
     // animation: nav-show 1s ease-in-out both;
 

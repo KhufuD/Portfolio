@@ -107,3 +107,16 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khu
 })
 
 
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "khufudev@gmail.com",
+        Password : "Roronoa.zoro1",
+        To : 'khufudev@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Email from the website",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
