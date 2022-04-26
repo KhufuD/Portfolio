@@ -82,7 +82,6 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khu
       // Put things in right spots of markup
       let output = '';
       posts.slice(0,3).forEach((item) => {
-
         output += `
             <li class="blog__post">
                <a href="${item.link}">

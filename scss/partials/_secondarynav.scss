@@ -1,21 +1,32 @@
-.navigator {
-    background-color: $background-color;
-    top: 0;
-    z-index: 20;
-    .navigator-inner {
-        padding: 0 16px;
+.secondary-nav {
+
+    background-color: $footer-color;
+    transform: rotate(90deg);
+    position: fixed;
+    left: -100vw;
+    top: 22.2vw;
+    width: 96vh;
+    border-radius: 16px 16px 0 0;
+    padding: 48px 0 32px 0;
+    box-shadow: 0px -6px 12px -8px $primary-color;
+    transition: 0.3s ease-in-out;
         nav {
+
             ol {
+
                 list-style: none;
-                display: flex;
+                display: flex;                
+
                 justify-content: space-around;
+                
                 li {
                     align-self: flex-start;
+                    padding: 0 16px;
                     a {
                         @include heading-2();
                         margin-bottom: 0;
                         position: relative;
-                        font-size: 32px;
+                        font-size: 20px;
                         line-height: 1.6;
                         color: transparent;
                         -webkit-text-stroke: 1px $heading-color;
@@ -39,37 +50,17 @@
                 }
             }
         }
-    }
+    
 }
 
-// .nav-scrolled{
-//     position: fixed;
-//     transform: rotate(90deg);
-//     margin-left: -22vw;
-    
-//     margin-top: 44vh; 
-//     width: 96vh;
-//     border-radius: 16px 16px 0 0;
-//     padding: 48px 0 32px 0;
-//     box-shadow: 0px -6px 12px -8px $primary-color;
-//     -webkit-animation: nav-show 1s ease-in-out both;
-//     animation: nav-show 1s ease-in-out both;
-//     .navigator-inner{
-//         nav{
-//             ol{
-//                 li{
-//                     a{
-                      
+.nav-scrolled{
+    display: block !important;
+    left: -22vw;
+    // -webkit-animation: nav-show 1s ease-in-out both;
+    // animation: nav-show 1s ease-in-out both;
 
-//                         font-size: 24px !important;
-                        
-//                     }
-//                 }
-//             }
-//         }
-//     }
 
-// }
+}
 
 // @-webkit-keyframes nav-show {
 //     0% {
