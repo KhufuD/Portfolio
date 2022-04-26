@@ -594,7 +594,7 @@ footer .copyright .copy-text {
 }
 
 .blog {
-  margin-bottom: 160px;
+  margin-top: 160px;
 }
 .blog h2 {
   font-family: "League Spartan";
@@ -682,6 +682,9 @@ footer .copyright .copy-text {
   font-size: 24px;
   text-align: left;
   letter-spacing: 4px;
+  line-height: 1.4;
+  max-height: 67px;
+  overflow: hidden;
 }
 .blog .blog__intro {
   font-family: "Playfair Display";
@@ -692,6 +695,8 @@ footer .copyright .copy-text {
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 1.5;
+  max-height: 72px;
+  overflow: hidden;
 }
 .blog .blog__info {
   font-weight: 300;

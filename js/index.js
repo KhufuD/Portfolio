@@ -83,13 +83,13 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khu
       let output = '';
       posts.slice(0,3).forEach((item) => {
         output += `
-            <li class="blog__post">
-               <a href="${item.link}">
+            <li class="blog__post" >
+               <a href="${item.link}" target="_blank">
                   <img src="${item.thumbnail}" class="blog__topImg"></img>
                   <div class="blog__content">
                      <div class="blog_preview">
-                        <h2 class="blog__title">${shortenText(item.title, 0, 30)+ '...'}</h2>
-                        <p class="blog__intro">${'...' + shortenText(toText(item.content),60, 300)+ '...'}</p>
+                        <h2 class="blog__title">${shortenText(item.title)}</h2>
+                        <p class="blog__intro">${shortenText(toText(item.content),0, 160)}</p>
                      </div>
                      <hr>
                      <div class="blog__info">
@@ -103,6 +103,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khu
         
       })
       document.querySelector('.blog__slider').innerHTML = output
+
 })
 
 
