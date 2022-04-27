@@ -5,18 +5,19 @@
             color: $primary-color;
             font-size: 72px;
             position: fixed;
-            right: -80px;
-            bottom: 80px;
+            left: -80px;
+            top: 10px;
             cursor: pointer;
+            z-index: 21;
             transition: 0.4s ease-in-out;
-            -webkit-animation: slide-top 1s linear infinite both;
-            animation: slide-top 1s linear infinite both;
+            // -webkit-animation: slide-top 1s linear infinite both;
+            // animation: slide-top 1s linear infinite both;
             transition: 0.3s ease-in-out !important;
     
         }
         .show-arrow{
       
-            right: 40px !important;
+            left: 60px !important;
         }
    
 }

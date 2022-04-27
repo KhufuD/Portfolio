@@ -27,7 +27,7 @@ var x = setInterval(function() {
 }, 1000);
 
 var scrollPosition = window.scrollY;
-var navBar = document.getElementById('navigate');
+var navBar = document.getElementById('navigator');
 
 window.addEventListener('scroll', function() {
 

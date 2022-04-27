@@ -2,6 +2,7 @@
     background-color: $background-color;
     top: 0;
     z-index: 20;
+    transition: 0.5s ease-in-out;
     .navigator-inner {
         padding: 0 16px;
         nav {
@@ -42,54 +43,11 @@
     }
 }
 
-// .nav-scrolled{
-//     position: fixed;
-//     transform: rotate(90deg);
-//     margin-left: -22vw;
-    
-//     margin-top: 44vh; 
-//     width: 96vh;
-//     border-radius: 16px 16px 0 0;
-//     padding: 48px 0 32px 0;
-//     box-shadow: 0px -6px 12px -8px $primary-color;
-//     -webkit-animation: nav-show 1s ease-in-out both;
-//     animation: nav-show 1s ease-in-out both;
-//     .navigator-inner{
-//         nav{
-//             ol{
-//                 li{
-//                     a{
-                      
+.nav-scrolled{
+    position: fixed;
+    width: 100%;
+    padding: 24px 0 8px 0;
+    background-color: $footer-color;
 
-//                         font-size: 24px !important;
-                        
-//                     }
-//                 }
-//             }
-//         }
-//     }
+}
 
-// }
-
-// @-webkit-keyframes nav-show {
-//     0% {
-
-//       opacity: 0;
-//     }
-//     100% {
-
-//       opacity: 1;
-//     }
-    
-//   }
-//   @keyframes nav-show {
-//     0% {
-
-//       opacity: 0;
-//     }
-//     100% {
-
-//       opacity: 1;
-//     }
-//   }
-  
