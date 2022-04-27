@@ -322,6 +322,7 @@ footer .copyright .copy-text {
 .hero .hero-inner .hero-image img {
   margin: -40px 0 36px -40px;
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
@@ -863,23 +864,28 @@ footer .copyright .copy-text {
 }
 .secondary-nav {
   background-color: #252526;
-  transform: rotate(90deg);
   position: fixed;
-  left: -100vw;
-  top: 22.2vw;
-  width: 100vh;
-  padding: 48px 0 32px 0;
+  top: 0;
+  left: -40vw;
   box-shadow: 0px -6px 12px -8px #1D1D1D;
   transition: 0.3s ease-in-out;
 }
 .secondary-nav nav ol {
+  height: 100vh;
   list-style: none;
   display: flex;
+  padding: 40px 0 0 0;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: left;
 }
 .secondary-nav nav ol li {
-  align-self: flex-start;
   padding: 0 16px;
+  transform: rotate(90deg);
+  margin-right: -70px !important;
+}
+.secondary-nav nav ol li:nth-child(3) {
+  margin-top: 60px !important;
 }
 .secondary-nav nav ol li a {
   font-family: "League Spartan";
@@ -916,7 +922,7 @@ footer .copyright .copy-text {
 
 .nav-scrolled {
   display: block !important;
-  left: -23vw;
+  left: -4vw;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,36 +1,38 @@
 .secondary-nav {
-
     background-color: $footer-color;
-    transform: rotate(90deg);
     position: fixed;
-    left: -100vw;
-    top: 22.2vw;
-    width: 100vh;
-
-    padding: 48px 0 32px 0;
+    top: 0;
+    left: -40vw;
     box-shadow: 0px -6px 12px -8px $background-color;
     transition: 0.3s ease-in-out;
         nav {
 
             ol {
-
+                height: 100vh;
                 list-style: none;
-                display: flex;                
-
+                display: flex;
+                padding: 40px 0 0 0;                
+                flex-direction: column;
                 justify-content: space-around;
-                
+                align-items: left;
                 li {
-                    align-self: flex-start;
                     padding: 0 16px;
+                    transform: rotate(90deg);
+                    margin-right: -70px !important;
+                    &:nth-child(3){
+                        margin-top: 60px !important;
+                    }
                     a {
                         @include heading-2();
                         margin-bottom: 0;
                         position: relative;
                         font-size: 20px;
                         line-height: 1.6;
+                        
                         color: transparent;
                         -webkit-text-stroke: 1px $heading-color;
                         font-weight: 700;
+                        
                         &::before {
                             content: attr(data-text);
                             position: absolute;
@@ -55,32 +57,5 @@
 
 .nav-scrolled{
     display: block !important;
-    left: -23vw;
-    // -webkit-animation: nav-show 1s ease-in-out both;
-    // animation: nav-show 1s ease-in-out both;
-
-
+    left: -4vw;
 }
-
-// @-webkit-keyframes nav-show {
-//     0% {
-
-//       opacity: 0;
-//     }
-//     100% {
-
-//       opacity: 1;
-//     }
-    
-//   }
-//   @keyframes nav-show {
-//     0% {
-
-//       opacity: 0;
-//     }
-//     100% {
-
-//       opacity: 1;
-//     }
-//   }
-  
