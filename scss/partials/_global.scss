@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+    height: 100vh;
+    position: relative;
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: calc(100vw - 20vw);
+    margin: 0 auto;
+}
+
+textarea,
+input:focus {
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}

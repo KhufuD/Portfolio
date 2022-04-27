@@ -1,0 +1,68 @@
+.hire-me {
+    margin: 120px 0;
+    .hire-me-inner {
+        padding: 56px 0;
+        background-color: $footer-color;
+        h2 {
+            @include heading-2;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .mailing-form {
+            width: 40%;
+            margin: 0 auto;
+            p {
+                @include large-text;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                margin-top: 40px;
+                input {
+                    width: 48%;
+                    border: none;
+                    background-color: unset;
+                    font-size: $reg-text;
+                    color: $heading-color;
+                    padding: 6px 8px;
+                    overflow: hidden;
+                    border-bottom: 1px solid $primary-color;
+                }
+                #message {
+                    width: 100%;
+                    resize: none;
+                    border: none;
+                    background-color: unset;
+                    font-size: $reg-text;
+                    color: $heading-color;
+                    padding: 6px 8px;
+                    overflow: hidden;
+                    border-bottom: 1px solid $primary-color;
+                }
+                #submit {
+                    width: 130px;
+                    margin: 0 auto;
+                    text-transform: uppercase;
+                    border-radius: 8px;
+                    border: 1px solid transparent;
+                    padding: 12px 16px;
+                    letter-spacing: 2px;
+                    @include large-text;
+                    background-color: $primary-color;
+                    color: $background-color;
+                    font-weight: 600;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid $primary-color;
+                        color: $primary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

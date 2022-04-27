@@ -1,0 +1,26 @@
+header {
+    border-bottom: 1px solid $primary-color;
+    .header-inner {
+        padding: 8px 0 16px 0;
+        .logo {
+            text-align: center;
+        }
+        .social-links {
+            margin-top: 16px;
+            ul {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    margin-right: 8px;
+                    a {
+                        color: $primary-color;
+                        font-size: $lg-text;
+                    }
+                }
+            }
+        }
+    }
+}

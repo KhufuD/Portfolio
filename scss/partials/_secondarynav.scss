@@ -1,0 +1,61 @@
+.secondary-nav {
+    background-color: $footer-color;
+    position: fixed;
+    top: 0;
+    left: -40vw;
+    box-shadow: 0px -6px 12px -8px $background-color;
+    transition: 0.3s ease-in-out;
+        nav {
+
+            ol {
+                height: 100vh;
+                list-style: none;
+                display: flex;
+                padding: 40px 0 0 0;                
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: left;
+                li {
+                    padding: 0 16px;
+                    transform: rotate(90deg);
+                    margin-right: -70px !important;
+                    &:nth-child(3){
+                        margin-top: 60px !important;
+                    }
+                    a {
+                        @include heading-2();
+                        margin-bottom: 0;
+                        position: relative;
+                        font-size: 20px;
+                        line-height: 1.6;
+                        
+                        color: transparent;
+                        -webkit-text-stroke: 1px $heading-color;
+                        font-weight: 700;
+                        
+                        &::before {
+                            content: attr(data-text);
+                            position: absolute;
+                            color: $heading-color;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 0.4s ease-in-out;
+                            border-color: $primary-color;
+                        }
+                        &:hover::before {
+                            height: 100%;
+                            -webkit-text-stroke: 1px $heading-color;
+                            filter: drop-shadow( 0 0 25px $primary-color);
+                            border-bottom: 6px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+
+.nav-scrolled{
+    display: block !important;
+    left: -4vw;
+}
