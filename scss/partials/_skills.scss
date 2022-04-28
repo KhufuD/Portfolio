@@ -14,11 +14,9 @@
                     width: 40%;
                     overflow: hidden;
                     h3 {
-                        // border: 1px solid $primary-color;
                         text-align: center;
                         @include heading-2;
                         font-size: 28px;
-                        
                         padding: 12px 0 0 0;
                         line-height: 1;
                         position: relative;
@@ -71,6 +69,27 @@
                             #elementor {
                                 right: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1280px){
+    .skills{
+        .container{
+            .skills-inner{
+                h2{
+                    font-size: 32px;
+                }
+                .skill-percentage{
+                    .skill-list{
+                        h3{
+                            
+                            font-size: 20px;
+                            margin-bottom: 32px;
                         }
                     }
                 }

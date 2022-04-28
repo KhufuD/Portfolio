@@ -67,3 +67,20 @@ footer {
         }
     }
 }
+
+@media (max-width: 1080px){
+    footer{
+        .footer-inner{
+            .footer-top{
+                .col-right{
+                    .footer-logo{
+                        max-width: 80px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

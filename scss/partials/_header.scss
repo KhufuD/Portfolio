@@ -24,3 +24,17 @@ header {
         }
     }
 }
+
+@media (max-width:1080px){
+    header{
+        .header-inner{
+            .logo{
+                max-width: 80px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

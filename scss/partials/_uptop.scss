@@ -52,3 +52,26 @@
     }
 }
 
+@media (max-width:1280px){
+    #up-top{
+        #arrow-up{
+            font-size: 56px;
+        }
+    }
+}
+
+@media (max-width:1080px){
+    #up-top{
+        #arrow-up{
+            font-size: 48px;
+            top: 16px;
+        }
+    }
+}
+
+@media (max-width:992px){
+    .show-arrow{
+        display: none;
+    }
+
+}

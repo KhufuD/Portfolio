@@ -80,3 +80,46 @@
         width: 10%;
     }
 }
+
+@media (max-width: 1280px){
+    .hero{
+        .hero-inner{
+            .hero-left{
+                h1{
+                    .text-animation{
+                        font-size: 48px;
+                    letter-spacing: 6px;
+                    
+                    }
+                }
+            }
+            .hero-image{
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .hero{
+        .hero-inner{
+            gap: 36px;
+            .hero-left{
+                h1{
+                    .text-animation{
+                        font-size: 40px;
+                    }
+                }
+                a{
+                    padding: 10px 20px;
+                }
+            }
+            .hero-image{
+                img{
+                    margin: unset;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
