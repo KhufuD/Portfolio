@@ -187,3 +187,13 @@ a{
       
    }
 }
+
+@media (max-width:576px){
+   .blog{
+      .blog{
+         &__post{
+            width: 70%;
+         }
+      }
+   }
+}

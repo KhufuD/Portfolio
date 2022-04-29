@@ -99,3 +99,192 @@ footer {
         }
     }
 }
+
+@media (max-width:576px){
+    footer{
+        .footer-inner{
+            .footer-top{
+                flex-direction: column;
+                align-items: center;
+                
+                gap: 32px;
+                .col-right{
+                    width: 100%;
+                    align-self: center;
+                    justify-content: space-between;
+                    .footer-logo{
+                        margin: 0 auto;
+                        
+                    }   
+                    p{
+                        margin: 0 auto;
+                        width: 277px;
+                    } 
+                }
+                .col-center{
+                    width: 277px;
+                    h4{
+                        text-align: center;
+                        font-size: $lg-text;
+                    }
+                }
+                .social-links-footer{
+                    width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    ul{
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: unest;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

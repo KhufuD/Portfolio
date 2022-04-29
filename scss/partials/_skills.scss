@@ -97,3 +97,17 @@
         }
     }
 }
+
+@media (max-width:768px){
+    .skills{
+        .container{
+            .skills-inner{
+                .skill-percentage{
+                    .skill-list{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

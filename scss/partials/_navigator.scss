@@ -194,6 +194,7 @@
         
           .nav-menu li {
             padding: 1rem 0;
+            align-self: center;
             
           }
         
@@ -201,6 +202,7 @@
             margin: 1rem 0;
             color: #333;
             z-index: 1;
+            font-size: 32px;
           }
         
           .active {
@@ -229,7 +231,7 @@
           }
           .active {
               background-color: $background-color;
-            
+              opacity: 0.99;
             z-index: 100;
             transition: 0.5s ease;
           }

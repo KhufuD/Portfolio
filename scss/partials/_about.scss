@@ -98,3 +98,24 @@
         }
     }
 }
+
+@media (max-width:768px){
+    .about{
+        .about-inner{
+            .about-flex{
+                flex-direction: column;
+                align-items: center;
+                .about-left{
+                    overflow: hidden;
+                }
+                .about-right{
+                    max-width: 300px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
