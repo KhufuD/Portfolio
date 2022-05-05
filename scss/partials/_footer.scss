@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 footer {
     background-color: $footer-color;
     margin-top: 16px;
@@ -5,9 +12,13 @@ footer {
         padding-top: 24px;
         .footer-top {
             margin-bottom: 24px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             .col-right {
                 width: 30%;
                 .footer-logo {
@@ -42,10 +53,17 @@ footer {
                 width: 10%;
                 ul {
                     list-style: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    flex-direction: column;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
                     gap: 12px;
-                    align-items: flex-end;
+                    -webkit-box-align: end;
+                        -ms-flex-align: end;
+                            align-items: flex-end;
                     li {
                         a {
                             color: $primary-color;
@@ -91,7 +109,9 @@ footer {
             .footer-top{
                 .social-links-footer{
                     ul{
-                        justify-content: space-between;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
                         height: 100%;
                     }
                 }
@@ -104,14 +124,23 @@ footer {
     footer{
         .footer-inner{
             .footer-top{
-                flex-direction: column;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 
                 gap: 32px;
                 .col-right{
                     width: 100%;
-                    align-self: center;
-                    justify-content: space-between;
+                    -ms-flex-item-align: center;
+                        -ms-grid-row-align: center;
+                        align-self: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
                     .footer-logo{
                         margin: 0 auto;
                         
@@ -131,9 +160,16 @@ footer {
                 .social-links-footer{
                     width: 100%;  
                     ul{
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: unest;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                                flex-direction: row;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
+                        -webkit-box-align: unest;
+                            -ms-flex-align: unest;
+                                align-items: unest;
                         
                     }
                 }
@@ -148,8 +184,12 @@ footer {
             .footer-top{
                 .col-right{
                     width: 100%;
-                    align-self: center;
-                    justify-content: space-between;
+                    -ms-flex-item-align: center;
+                        -ms-grid-row-align: center;
+                        align-self: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
                     .footer-logo{
                         margin: 0 auto;
                         
@@ -170,9 +210,16 @@ footer {
                 .social-links-footer{
                     width: 100%;  
                     ul{
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: unest;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                                flex-direction: row;
+                        -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
+                        -webkit-box-align: unest;
+                            -ms-flex-align: unest;
+                                align-items: unest;
                         
                     }
                 }

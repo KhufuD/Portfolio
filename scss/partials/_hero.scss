@@ -1,10 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .hero {
     padding: 0 16px;
     margin: 120px 0;
     .hero-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         .hero-left{
             h1 {
                 position: relative;
@@ -24,6 +36,8 @@
                     @include heading-1;
                     font-size: 64px;
                     letter-spacing: 12px;
+                    -webkit-transition: 0.3s ease-in-out;
+                    -o-transition: 0.3s ease-in-out;
                     transition: 0.3s ease-in-out;
                 }
             }
@@ -36,6 +50,8 @@
                 @include large-text;
                 color: $background-color;
                 font-weight: 800;
+                -webkit-transition: 0.4s ease-in-out;
+                -o-transition: 0.4s ease-in-out;
                 transition: 0.4s ease-in-out;
                 &:hover{
                     color: $primary-color;
@@ -128,7 +144,10 @@
 @media (max-width: 768px){
     .hero{
         .hero-inner{
-            flex-direction: column-reverse;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
             .hero-left{
                 text-align: center;
                 h1{

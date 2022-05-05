@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 header {
     border-bottom: 1px solid $primary-color;
     .header-inner {
@@ -10,8 +17,12 @@ header {
             ul {
                 width: 80%;
                 margin: 0 auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: space-between;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
                 li {
                     list-style: none;
                     margin-right: 8px;
@@ -36,5 +47,16 @@ header {
                 }
             }
         }
+    }
+}
+
+@media (max-width:992px){
+    header{
+        background-color: $background-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
     }
 }

@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .banner {
     overflow: hidden;
     .banner-inner {
         margin: 24px 0;
         position: relative;
+        z-index: 1;
         margin-left: -1500px;
         -webkit-animation: slide-right 12s linear infinite both;
         animation: slide-right 12s linear infinite both;

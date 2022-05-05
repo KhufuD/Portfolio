@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .about {
     .about-inner {
         h2 {
@@ -5,15 +12,19 @@
             text-align: center;
         }
         .about-flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             .about-left {
                 max-width: 400px;
                 max-height: 400px;
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                 }
             }
             .about-right {
@@ -37,6 +48,8 @@
                     @include large-text;
                     color: $background-color;
                     font-weight: 800;
+                    -webkit-transition: 0.4s ease-in-out;
+                    -o-transition: 0.4s ease-in-out;
                     transition: 0.4s ease-in-out;
                     &:hover{
                         color: $primary-color;
@@ -103,17 +116,29 @@
     .about{
         .about-inner{
             .about-flex{
-                flex-direction: column;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 .about-left{
                     overflow: hidden;
                 }
                 .about-right{
                     max-width: 300px;
                     margin: 0 auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                 }
             }
         }
