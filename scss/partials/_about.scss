@@ -15,65 +15,60 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
+            flex-direction: column;
             -ms-flex-pack: distribute;
-                justify-content: space-around;
-            .about-left {
-                max-width: 400px;
-                max-height: 400px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    -o-object-fit: cover;
-                       object-fit: cover;
+            justify-content: space-around;
+            background-color: $footer-color;
+            padding: 48px;
+            margin: auto 0;
+            p {
+                @include large-text;
+                line-height: 2;
+                text-align: justify;
+                margin-bottom: 24px;
+                max-width: 75%;
+                align-self: flex-start;
+                &:nth-child(2) {
+                    margin-bottom: 48px;
+                    align-self: flex-end;
                 }
             }
-            .about-right {
-                max-width: 50%;
-                margin: auto 0;
-                p {
-                    @include large-text;
-                    line-height: 2;
-                    text-align: justify;
-                    margin-bottom: 24px;
-                    &:nth-child(2) {
-                        margin-bottom: 48px;
-                    }
-                }
-                a{
-                    background-color: $primary-color;
-                    padding: 12px 20px;
-                    border: 1px solid transparent;
-                    border-radius: 8px;
-                    text-transform: uppercase;
-                    @include large-text;
-                    color: $background-color;
-                    font-weight: 800;
-                    -webkit-transition: 0.4s ease-in-out;
-                    -o-transition: 0.4s ease-in-out;
-                    transition: 0.4s ease-in-out;
-                    &:hover{
-                        color: $primary-color;
-                        background-color: $background-color;
-                        border: 1px solid $primary-color;
-                    }
+            a {
+                background-color: $primary-color;
+                padding: 12px 20px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                text-transform: uppercase;
+                @include large-text;
+                color: $background-color;
+                font-weight: 800;
+                -webkit-transition: 0.4s ease-in-out;
+                -o-transition: 0.4s ease-in-out;
+                transition: 0.4s ease-in-out;
+                align-self: center;
+                &:hover {
+                    color: $primary-color;
+                    background-color: $background-color;
+                    border: 1px solid $primary-color;
                 }
             }
         }
     }
 }
 
-@media (max-width:1280px){
-    .about{
-        .about-inner{
-            h2{
+@media (max-width:1280px) {
+    .about {
+        .about-inner {
+            h2 {
                 font-size: 32px;
             }
-            .about-flex{
-                .about-left{
+            .about-flex {
+                .about-left {
                     max-width: 300px;
                     max-height: 300px;
-                }.about-right{
-                    p{
+                }
+                .about-right {
+                    p {
                         font-size: $reg-text;
                     }
                 }
@@ -82,28 +77,28 @@
     }
 }
 
-@media (max-width:992px){
-    .about{
-        .about-inner{
-            h2{
+@media (max-width:992px) {
+    .about {
+        .about-inner {
+            h2 {
                 font-size: 32px;
             }
-            .about-flex{
+            .about-flex {
                 gap: 32px;
-                .about-left{
-                   
+                .about-left {
                     max-width: 300px;
                     max-height: 300px;
-                }.about-right{
+                }
+                .about-right {
                     margin: 0;
-                    p{
+                    p {
                         line-height: 1.2;
                         margin-bottom: 16px;
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             margin-bottom: 40px;
                         }
                     }
-                    a{
+                    a {
                         padding: 10px 16px;
                     }
                 }
@@ -112,21 +107,21 @@
     }
 }
 
-@media (max-width:768px){
-    .about{
-        .about-inner{
-            .about-flex{
+@media (max-width:768px) {
+    .about {
+        .about-inner {
+            .about-flex {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                .about-left{
+                -ms-flex-align: center;
+                align-items: center;
+                .about-left {
                     overflow: hidden;
                 }
-                .about-right{
+                .about-right {
                     max-width: 300px;
                     margin: 0 auto;
                     display: -webkit-box;
@@ -134,11 +129,11 @@
                     display: flex;
                     -webkit-box-orient: vertical;
                     -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
                     -webkit-box-align: center;
-                        -ms-flex-align: center;
-                            align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
                 }
             }
         }

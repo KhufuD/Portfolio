@@ -8,12 +8,9 @@
 .hire-me {
     margin: 120px 0;
     .hire-me-inner {
-        padding: 56px 0;
-        background-color: $footer-color;
         h2 {
             @include heading-2;
             text-align: center;
-          
         }
         p {
             @include large-text;
@@ -22,15 +19,16 @@
             margin: 0 24px 16px 24px;
         }
         .mailing-form {
-            width: 40%;
+            width: 60%;
             margin: 0 auto;
-            
+            background-color: $footer-color;
+            padding: 56px 10%;
             form {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
                 -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
+                flex-wrap: wrap;
                 gap: 16px;
                 margin-top: 40px;
                 input {
@@ -81,18 +79,18 @@
     }
 }
 
-@media (max-width:1280px){
-    .hire-me{
-        .hire-me-inner{
-            h2{
+@media (max-width:1280px) {
+    .hire-me {
+        .hire-me-inner {
+            h2 {
                 font-size: 32px;
             }
-            .mailing-form{
-                form{
-                    input{
+            .mailing-form {
+                form {
+                    input {
                         width: 46%;
                     }
-                    #message{
+                    #message {
                         width: 98%;
                     }
                 }
@@ -100,31 +98,32 @@
         }
     }
 }
-@media (max-width:1280px){
-    .hire-me{
-        .hire-me-inner{
-            h2{
+
+@media (max-width:1280px) {
+    .hire-me {
+        .hire-me-inner {
+            h2 {
                 font-size: 32px;
             }
-            p{
+            p {
                 font-size: $reg-text;
             }
         }
     }
 }
 
-@media (max-width:992px){
-    .hire-me{
-        .hire-me-inner{
-            h2{
+@media (max-width:992px) {
+    .hire-me {
+        .hire-me-inner {
+            h2 {
                 font-size: 32px;
             }
-            .mailing-form{
-                form{
-                    input{
+            .mailing-form {
+                form {
+                    input {
                         width: 100%;
                     }
-                    #message{
+                    #message {
                         width: 100%;
                     }
                 }
@@ -133,19 +132,19 @@
     }
 }
 
-@media (max-width:576px){
-    .hire-me{
-        .hire-me-inner{
-            h2{
+@media (max-width:576px) {
+    .hire-me {
+        .hire-me-inner {
+            h2 {
                 font-size: 32px;
             }
-            .mailing-form{
+            .mailing-form {
                 width: 80%;
-                form{
-                    input{
+                form {
+                    input {
                         width: 100%;
                     }
-                    #message{
+                    #message {
                         width: 100%;
                     }
                 }
@@ -153,13 +152,14 @@
         }
     }
 }
-@media (max-width:480px){
-    .hire-me{
-        .hire-me-inner{
-            h2{
+
+@media (max-width:480px) {
+    .hire-me {
+        .hire-me-inner {
+            h2 {
                 font-size: 32px;
             }
-            p{
+            p {
                 font-size: $sm-text;
             }
         }

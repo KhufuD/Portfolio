@@ -13,11 +13,11 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
-        .hero-left{
+        justify-content: space-around;
+        .hero-left {
             h1 {
                 position: relative;
                 margin-bottom: 32px;
@@ -41,7 +41,7 @@
                     transition: 0.3s ease-in-out;
                 }
             }
-            a{
+            a {
                 background-color: $primary-color;
                 padding: 12px 40px;
                 border: 1px solid transparent;
@@ -53,7 +53,7 @@
                 -webkit-transition: 0.4s ease-in-out;
                 -o-transition: 0.4s ease-in-out;
                 transition: 0.4s ease-in-out;
-                &:hover{
+                &:hover {
                     color: $primary-color;
                     background-color: $background-color;
                     border: 1px solid $primary-color;
@@ -61,12 +61,15 @@
             }
         }
         .hero-image {
-            max-width: 400px;
-            border: 4px solid $primary-color;
+            max-width: 500px;
+            background-color: rgba(31, 255, 15, 0.1);
+            border: 1px solid transparent;
+            position: relative;
+            border-radius: 500px;
+            overflow: hidden;
             img {
-                margin: -40px 0 36px -40px;
+                margin-bottom: -5px;
                 height: 100%;
-                position: relative;
                 width: 100%;
             }
         }
@@ -97,68 +100,58 @@
     }
 }
 
-@media (max-width: 1280px){
-    .hero{
-        .hero-inner{
-            .hero-left{
-                h1{
-                    .text-animation{
+@media (max-width: 1280px) {
+    .hero {
+        .hero-inner {
+            .hero-left {
+                h1 {
+                    .text-animation {
                         font-size: 48px;
-                    letter-spacing: 6px;
-                    
+                        letter-spacing: 6px;
                     }
                 }
             }
-            .hero-image{
+            .hero-image {
                 max-width: 300px;
             }
         }
     }
 }
 
-@media (max-width: 992px){
-    .hero{
+@media (max-width: 992px) {
+    .hero {
         margin-top: 0;
-        .hero-inner{
+        .hero-inner {
             gap: 36px;
-            .hero-left{
-                h1{
-                    .text-animation{
+            .hero-left {
+                h1 {
+                    .text-animation {
                         font-size: 40px;
                     }
                 }
-                a{
+                a {
                     padding: 10px 20px;
-                }
-            }
-            .hero-image{
-                img{
-                    margin: unset;
-                    padding: 8px;
                 }
             }
         }
     }
 }
 
-@media (max-width: 768px){
-    .hero{
-        .hero-inner{
+@media (max-width: 768px) {
+    .hero {
+        .hero-inner {
             -webkit-box-orient: vertical;
             -webkit-box-direction: reverse;
-                -ms-flex-direction: column-reverse;
-                    flex-direction: column-reverse;
-            .hero-left{
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            .hero-left {
                 text-align: center;
-                h1{
-                    &::after{
+                h1 {
+                    &::after {
                         -webkit-animation: unset;
-                    animation: unset;
+                        animation: unset;
                     }
                 }
-            }
-            .hero-image{
-
             }
         }
     }
