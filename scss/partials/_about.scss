@@ -63,14 +63,8 @@
                 font-size: 32px;
             }
             .about-flex {
-                .about-left {
-                    max-width: 300px;
-                    max-height: 300px;
-                }
-                .about-right {
-                    p {
-                        font-size: $reg-text;
-                    }
+                p {
+                    font-size: $reg-text;
                 }
             }
         }
@@ -84,56 +78,30 @@
                 font-size: 32px;
             }
             .about-flex {
-                gap: 32px;
-                .about-left {
-                    max-width: 300px;
-                    max-height: 300px;
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 16px;
+                    align-self: center;
+                    &:nth-child(2) {
+                        margin-bottom: 40px;
+                        align-self: center;
+                    }
                 }
-                .about-right {
-                    margin: 0;
-                    p {
-                        line-height: 1.2;
-                        margin-bottom: 16px;
-                        &:nth-child(2) {
-                            margin-bottom: 40px;
-                        }
-                    }
-                    a {
-                        padding: 10px 16px;
-                    }
+                a {
+                    padding: 10px 16px;
                 }
             }
         }
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 576px) {
     .about {
         .about-inner {
             .about-flex {
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                .about-left {
-                    overflow: hidden;
-                }
-                .about-right {
-                    max-width: 300px;
-                    margin: 0 auto;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
+                padding: 32px 15px;
+                p {
+                    max-width: 100%;
                 }
             }
         }

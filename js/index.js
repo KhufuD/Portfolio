@@ -1,4 +1,4 @@
-var countDownDate = new Date("June 1, 2022 00:00:00").getTime();
+var countDownDate = new Date("Aug 1, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -60,29 +60,30 @@ topArrow.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 
 fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khufudev')
-   .then((res) => res.json())
-   .then((data) => {
-      // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
-      const res = data.items //This is an array with the content. No feed, no info about author etc..
-      const posts = res.filter(item => item.categories.length > 4) // That's the main trick* !
+    .then((res) => res.json())
+    .then((data) => {
+        // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
+        const res = data.items //This is an array with the content. No feed, no info about author etc..
+        const posts = res.filter(item => item.categories.length > 4) // That's the main trick* !
 
-      // Functions to create a short text out of whole blog's content
-      function toText(node) {
-         let tag = document.createElement('div')
-         tag.innerHTML = node
-         node = tag.innerText
-         return node
-      }
-      function shortenText(text,startingPoint ,maxLength) {
-         return text.length > maxLength?
-         text.slice(startingPoint, maxLength):
-         text
-      }
+        // Functions to create a short text out of whole blog's content
+        function toText(node) {
+            let tag = document.createElement('div')
+            tag.innerHTML = node
+            node = tag.innerText
+            return node
+        }
 
-      // Put things in right spots of markup
-      let output = '';
-      posts.slice(0,3).forEach((item) => {
-        output += `
+        function shortenText(text, startingPoint, maxLength) {
+            return text.length > maxLength ?
+                text.slice(startingPoint, maxLength) :
+                text
+        }
+
+        // Put things in right spots of markup
+        let output = '';
+        posts.slice(0, 3).forEach((item) => {
+            output += `
             <li class="blog__post" >
                <a href="${item.link}" target="_blank">
                   <img src="${item.thumbnail}" class="blog__topImg"></img>
@@ -99,56 +100,55 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khu
                   </div>
                <a/>
             </li>`
-   
-        
-      })
-      document.querySelector('.blog__slider').innerHTML = output
-
-})
 
 
-function sendEmail(){
+        })
+        document.querySelector('.blog__slider').innerHTML = output
+
+    })
+
+
+function sendEmail() {
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "xxxxxx",
-        Password : "xxxx",
-        To : 'khufudev@gmail.com',
-        From : "khufudevelopment@gmail.com",
-        Subject : "Email from the website",
-        Body : "And this is the body"
+        Host: "smtp.gmail.com",
+        Username: "xxxxxx",
+        Password: "xxxx",
+        To: 'khufudev@gmail.com',
+        From: "khufudevelopment@gmail.com",
+        Subject: "Email from the website",
+        Body: "And this is the body"
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 }
 
 document.addEventListener(
     "scroll",
     function() {
-      var scrollTop =
-        document.documentElement["scrollTop"] || document.body["scrollTop"];
-      var scrollBottom =
-        (document.documentElement["scrollHeight"] ||
-          document.body["scrollHeight"]) - document.documentElement.clientHeight;
-      scrollPercent = scrollTop / scrollBottom * 100 + "%";
-      document
-        .getElementById("_progress")
-        .style.setProperty("--scroll", scrollPercent);
-    },
-    { passive: true }
-  );
+        var scrollTop =
+            document.documentElement["scrollTop"] || document.body["scrollTop"];
+        var scrollBottom =
+            (document.documentElement["scrollHeight"] ||
+                document.body["scrollHeight"]) - document.documentElement.clientHeight;
+        scrollPercent = scrollTop / scrollBottom * 100 + "%";
+        document
+            .getElementById("_progress")
+            .style.setProperty("--scroll", scrollPercent);
+    }, { passive: true }
+);
 
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    })
 );

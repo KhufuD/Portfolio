@@ -438,6 +438,9 @@ footer .copyright .copy-text {
 }
 
 @media (max-width: 1080px) {
+  footer .footer-inner .footer-top .col-center h4 {
+    line-height: 1.5;
+  }
   footer .footer-inner .footer-top .col-right .footer-logo {
     max-width: 80px;
   }
@@ -717,7 +720,7 @@ footer .copyright .copy-text {
 }
 @media (max-width: 992px) {
   .hero {
-    margin-top: 0;
+    margin-top: 50px;
   }
   .hero .hero-inner {
     gap: 36px;
@@ -818,11 +821,7 @@ footer .copyright .copy-text {
   .about .about-inner h2 {
     font-size: 32px;
   }
-  .about .about-inner .about-flex .about-left {
-    max-width: 300px;
-    max-height: 300px;
-  }
-  .about .about-inner .about-flex .about-right p {
+  .about .about-inner .about-flex p {
     font-size: 16px;
   }
 }
@@ -830,53 +829,25 @@ footer .copyright .copy-text {
   .about .about-inner h2 {
     font-size: 32px;
   }
-  .about .about-inner .about-flex {
-    gap: 32px;
-  }
-  .about .about-inner .about-flex .about-left {
-    max-width: 300px;
-    max-height: 300px;
-  }
-  .about .about-inner .about-flex .about-right {
-    margin: 0;
-  }
-  .about .about-inner .about-flex .about-right p {
-    line-height: 1.2;
+  .about .about-inner .about-flex p {
+    line-height: 1.5;
     margin-bottom: 16px;
+    align-self: center;
   }
-  .about .about-inner .about-flex .about-right p:nth-child(2) {
+  .about .about-inner .about-flex p:nth-child(2) {
     margin-bottom: 40px;
+    align-self: center;
   }
-  .about .about-inner .about-flex .about-right a {
+  .about .about-inner .about-flex a {
     padding: 10px 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .about .about-inner .about-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding: 32px 15px;
   }
-  .about .about-inner .about-flex .about-left {
-    overflow: hidden;
-  }
-  .about .about-inner .about-flex .about-right {
-    max-width: 300px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .about .about-inner .about-flex p {
+    max-width: 100%;
   }
 }
 /*
