@@ -12,67 +12,94 @@
             @include heading-2;
             text-align: center;
         }
-        .coming-soon {
-            height: 500px;
+        .portfolio-holder {
             background-color: $primary-color;
-            display: -webkit-box;
-            display: -ms-flexbox;
+            padding: 16px 16px;
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            h3 {
-                @include heading-2;
-                font-size: 60px;
-                margin-bottom: 0;
-                color: $background-color
-            }
-            p {
-                @include large-text;
-                color: $background-color;
-                span {
-                    display: block;
-                    text-align: center;
-                    @include heading-2;
-                    font-size: 32px;
-                    margin-top: 16px;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            .portfolio-col {
+                max-width: 28%;
+                text-align: center;
+                padding: 16px 24px;
+                .portfolio-image {
+                    max-width: 120px;
+                    width: 100%;
+                    max-height: 120px;
+                    height: 120px;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .portfolio-heading {
+                    margin: 24px 0;
+                    @include heading-4;
+                }
+                .portfolio-text {
+                    @include large-text;
+                    font-size: 16px;
+                    font-weight: 600;
                     color: $background-color;
+                }
+            }
+            .portfolio-col-2 {
+                max-width: 28%;
+                text-align: center;
+                background-color: $background-color;
+                padding: 16px 24px;
+                .portfolio-image-2 {
+                    max-width: 120px;
+                    width: 100%;
+                    max-height: 120px;
+                    height: 120px;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .portfolio-heading-2 {
+                    margin: 24px 0;
+                    @include heading-4;
+                    color: $heading-color;
+                }
+                .portfolio-text-2 {
+                    @include large-text;
+                    font-size: 16px;
+                    color: $heading-color;
                 }
             }
         }
     }
 }
 
-@media (max-width:1280px){
-    .portfolio{
-        .portfolio-inner{
-            h2{
+@media (max-width:1280px) {
+    .portfolio {
+        .portfolio-inner {
+            h2 {
                 font-size: 32px;
             }
         }
     }
 }
 
-@media (max-width:768px){
-    .portfolio{
-        .portfolio-inner{
-            .coming-soon{
+@media (max-width:768px) {
+    .portfolio {
+        .portfolio-inner {
+            .coming-soon {
                 margin: 0 auto;
                 padding: 0 16px;
                 width: 90%;
-                h3{
+                h3 {
                     text-align: center;
                     font-size: 32px;
                 }
-                p{
-                    span{
+                p {
+                    span {
                         font-size: 24px;
                     }
                 }
